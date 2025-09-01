@@ -45,25 +45,7 @@ Q.dues = 2;
 Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
-// factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
-// should this be normalized to 100%?
-Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
 
-// secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
@@ -72,7 +54,29 @@ Q.neorevisionism = 0;
 Q.crisis_urgency = 0;
 // nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
 Q.nazi_urgency = 0;
-// radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
+// radicalization indicates how radical t// factions
+Q.factions = ['clerical', 'social_catholic', 'coalitionist', 'regionalist'];
+
+// faction strengths and dissent (values should roughly total ~100 strength)
+Q.clerical_strength = 30;
+Q.clerical_dissent = 10;
+
+Q.social_catholic_strength = 25;
+Q.social_catholic_dissent = 5;
+
+Q.coalitionist_strength = 25;
+Q.coalitionist_dissent = 5;
+
+Q.regionalist_strength = 20;
+Q.regionalist_dissent = 10;
+
+// secret events...
+Q.coalition_breaks = 0;
+Q.vatican_intervenes = 0;
+Q.social_catholic_split = 0;
+Q.bavarian_autonomy_push = 0;
+
+rhe SPD's rhetoric is - scale from 0 to 10.
 Q.radicalization = 0;
 // Support for the WTB plan and proto-Keynesian works creation plans in general
 Q.wtb_support = 0;
